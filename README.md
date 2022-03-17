@@ -52,13 +52,26 @@ Pine supports single-line comments only.
 Comments are denoted by `//`. They can be placed most anywhere apart from on multi-line statements.
 
 # Identifiers
-Identifiers the name referencing a function or variable. Identifiers are mutable (can be re-assigned.)
+Identifiers the name referencing a function or variable. Identifiers can't be re-defined.
 
 ```python
 a = 1
 b = 2
-b = 3
-a = b
+c = b
 ```
 
 Can contain uppercase or lowercase, numbers and underscore. Cannot start with number. 
+
+# Variable Types
+Pine has the following types:
+
+- Integer: `a = 1`
+- Float: `a = 3.2`
+- Strings: `a = "hello"` or `a = 'hello'`
+- Bool `a = true`
+- Colors `a = #ff0000` or `a = color.red`
+- Lines and Labels
+- Plots and hline (horizontal line)
+- `na` which is null/none
+
+
