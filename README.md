@@ -46,3 +46,6 @@ my_function() =>
 
 ```
 
+# Comments 
+Pine supports single-line comments only.
+Comments are denoted by `//`. They can be placed most anywhere apart from on multi-line statements.
