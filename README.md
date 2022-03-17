@@ -60,3 +60,5 @@ b = 2
 b = 3
 a = b
 ```
+
+Can contain uppercase or lowercase, numbers and underscore. Cannot start with number. 
