@@ -31,7 +31,7 @@ Strategies:
 ## Format
 Multi-line statements are made by having the subsequent lines having any number of spaces that are not a multiple of 4.
 
-```pinescript
+```pine
 a = 1
   + 1
 ```
