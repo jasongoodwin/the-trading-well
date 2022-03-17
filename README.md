@@ -74,4 +74,8 @@ Pine has the following types:
 - Plots and hline (horizontal line)
 - `na` which is null/none
 
+## Default arguments in functions
+Functions will often have defaults that can be overridden.
+
+`plot(close, trackprice=false)`
 
