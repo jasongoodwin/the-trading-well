@@ -1,7 +1,8 @@
 # tradewell
-dark arts go here
 
-# Pinescript Quickstart
+Repository containing dark arts.
+
+# Pinescript Basics
 
 ## Boilerplate
 files have the version annotation at the top:
@@ -46,6 +47,16 @@ my_function() =>
 
 ```
 
-# Comments 
+## Comments 
 Pine supports single-line comments only.
 Comments are denoted by `//`. They can be placed most anywhere apart from on multi-line statements.
+
+# Pinescript Identifiers
+Identifiers are variables that are assigned. They are mutable (can be re-assigned.)
+
+```python
+a = 1
+b = 2
+b = 3
+a = b
+```
