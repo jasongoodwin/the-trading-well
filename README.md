@@ -27,3 +27,12 @@ Strategies:
 - can be used for backtesting
 - need to contain calls for buy/sell orders
 - You can create an `alertcondition` but can't use it.
+
+## Format
+Multi-line statements are made by having the subsequent lines having any number of spaces that are not a multiple of 4.
+
+```pinescript
+a = 1
+  + 1
+```
+
