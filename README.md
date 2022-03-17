@@ -63,8 +63,10 @@ c = b
 Can contain uppercase or lowercase, numbers and underscore. Cannot start with number. 
 
 # Variable Types
-Pine has the following types:
+Pine has the following identifier types:
+`int, float, bool, string, line, label, color`
 
+Identifiers can be assigned these:
 - Integer: `a = 1`
 - Float: `a = 3.2` or `a = 3.2e10`
 - Strings: `a = "hello"` or `a = 'hello'` or `a = 'I\'m a string'`
@@ -72,7 +74,7 @@ Pine has the following types:
 - Colors `a = #ff0000` or `a = color.red`
 - Lines and Labels
 - Plots and hline (horizontal line)
-- `na` which is null/none
+- `na` which is null/none. If assigning `na` explicitly, an identifier needs a type (`color my_color = na`) 
 - Tuples: `[a,b] = [1,2]`
 
 ## Default arguments in functions
@@ -80,6 +82,29 @@ Functions will often have defaults that can be overridden.
 
 `plot(close, trackprice=false)`
 
-# Editor Features
+### Editor Features
 Command click will give you info on function params. Can find colors etc there.
 The "Data Window" will show you information on variables in the script.
+
+### plot and fill
+Can plot and fill between w/ fill function.
+Plot output can be assigned so that it can be used in other functions like fill.
+
+```python
+open_id = plot(open, color=color.red, title="open")
+close_id = plot(close, color=color.red, title="close")
+fill(open_id, close_id, color=color.green, title="fill")
+```
+
+### hline
+Puts a horizontal line on the chart
+
+```python
+h1 = hline(1000)
+h2 = hline(1000)
+fill(h1, h2, color=color.red, trasp=50)
+```
+
+### lines and labels (pine v4+)
+`line.new()` see pine editor for detail.
+
