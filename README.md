@@ -51,8 +51,8 @@ my_function() =>
 Pine supports single-line comments only.
 Comments are denoted by `//`. They can be placed most anywhere apart from on multi-line statements.
 
-# Pinescript Identifiers
-Identifiers are variables that are assigned. They are mutable (can be re-assigned.)
+# Identifiers
+Identifiers the name referencing a function or variable. Identifiers are mutable (can be re-assigned.)
 
 ```python
 a = 1
