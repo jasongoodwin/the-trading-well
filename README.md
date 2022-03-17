@@ -66,7 +66,7 @@ Can contain uppercase or lowercase, numbers and underscore. Cannot start with nu
 Pine has the following types:
 
 - Integer: `a = 1`
-- Float: `a = 3.2`
+- Float: `a = 3.2` or `a = 3.2e10`
 - Strings: `a = "hello"` or `a = 'hello'`
 - Bool `a = true`
 - Colors `a = #ff0000` or `a = color.red`
