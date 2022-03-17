@@ -62,6 +62,12 @@ c = b
 
 Can contain uppercase or lowercase, numbers and underscore. Cannot start with number. 
 
+Can optionally declare the type
+
+```python
+int my_int = 1
+```
+
 # Variable Types
 Pine has the following identifier types:
 `int, float, bool, string, line, label, color`
