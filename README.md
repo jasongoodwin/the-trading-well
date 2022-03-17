@@ -52,7 +52,7 @@ Pine supports single-line comments only.
 Comments are denoted by `//`. They can be placed most anywhere apart from on multi-line statements.
 
 # Identifiers
-Identifiers the name referencing a function or variable. Identifiers can't be re-defined.
+Identifiers the name referencing a function or variable.
 
 ```python
 a = 1
