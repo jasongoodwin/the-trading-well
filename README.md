@@ -73,7 +73,7 @@ Pine has the following types:
 - Lines and Labels
 - Plots and hline (horizontal line)
 - `na` which is null/none
-- Tuples: `a = [1,2]`
+- Tuples: `[a,b] = [1,2]`
 
 ## Default arguments in functions
 Functions will often have defaults that can be overridden.
