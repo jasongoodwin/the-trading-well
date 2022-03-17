@@ -79,3 +79,6 @@ Functions will often have defaults that can be overridden.
 
 `plot(close, trackprice=false)`
 
+# Editor Features
+Command click will give you info on function params. Can find colors etc there.
+The "Data Window" will show you information on variables in the script.
