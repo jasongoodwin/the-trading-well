@@ -83,6 +83,8 @@ Identifiers can be assigned these:
 - `na` which is null/none. If assigning `na` explicitly, an identifier needs a type (`color my_color = na`) 
 - Tuples: `[a,b] = [1,2]`
 
+Re-assignment is done with the `:=` operator.
+
 ## Default arguments in functions
 Functions will often have defaults that can be overridden.
 
@@ -121,7 +123,7 @@ Every variable has a `form` in pinescript. There are 5 forms in v4:
 - Const (`a = 0` without re-assignment - `a` is a Const)
 - Input
 - Simple
-- Series (`a = 0` where a is re-assigned later - eg `if open > close \n a = close` - then `a` is a `series[integer]`)
+- Series (`a = 0` where a is re-assigned later - eg `if open > close \n a := close` - then `a` is a `series[integer]`)
 
 You'll see in the pinescript docs that a function may return `series[integer]` or `literal[float]`
 
