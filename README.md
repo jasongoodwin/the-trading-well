@@ -75,7 +75,7 @@ Pine has the following identifier types:
 Identifiers can be assigned these:
 - Integer: `a = 1`
 - Float: `a = 3.2` or `a = 3.2e10`
-- Strings: `a = "hello"` or `a = 'hello'` or `a = 'I\'m a string'`
+- Strings: `a = "hello"` or `a = 'hello'` or `a = 'I\'m a string'`. Can concatenate `a = "hello" + " " + "world"
 - Bool `a = true`
 - Colors `a = #ff0000` or `a = color.red`
 - Lines and Labels
@@ -121,8 +121,8 @@ Every variable has a `form` in pinescript. There are 5 forms in v4:
 
 - Literal (`1` is an integer literal)
 - Const (`a = 0` without re-assignment - `a` is a Const)
-- Input
-- Simple
+- Input - constants not known at compile time that are input as variables. `input_knob = input(1)` - tradingview will expose this to the user.
+- Simple - constants not known at compile time that come from the chart's symbol info. eg `syminfo.tickerid`
 - Series (`a = 0` where a is re-assigned later - eg `if open > close \n a := close` - then `a` is a `series[integer]`). There are a few default series: open, high low, close, volume, time, etc. Accessed w/ `[]`.
 
 You'll see in the pinescript docs that a function may return `series[integer]` or `literal[float]`
