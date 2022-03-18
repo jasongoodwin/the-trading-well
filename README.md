@@ -130,3 +130,6 @@ You'll see in the pinescript docs that a function may return `series[integer]` o
 ## Accessing series
 Series are 0 indexed w/ 0 being the most recent bar. So `close[1]` on a daily is yesterdays close.
 
+# Arithmetic Operators
+Five operators that you're used to: `+ - / * %` 
+Division of ints wont cast to a float so you'll get nailed if you try to div `1/2`. Throws an error.
