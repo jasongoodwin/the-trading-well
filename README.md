@@ -133,3 +133,27 @@ Series are 0 indexed w/ 0 being the most recent bar. So `close[1]` on a daily is
 # Arithmetic Operators
 Five operators that you're used to: `+ - / * %` 
 Division of ints wont cast to a float so you'll get nailed if you try to div `1/2`. Throws an error.
+
+# Comparison
+"" is equivalent to na
+Otherwise behaves as expected.
+
+Oddly hex lowercase and uppercase are not equivalent `CAFE == cafe` is `const bool = false`
+Functions can be used w/ various inputs and can map true/false with comparison operator `1 : 0` eg `plot(eq_res ? 1 : 0, color = #ff0000, title = "#ff0000")`
+
+Equivalence is a bit interesting because you can't compare series eg `line.new(0,0,0,0) == line.new(0,0,0,0)` is series false.
+
+There are some logical operators that are english:
+
+`not false` - this is true
+`true and true` - this is true
+`false and not false` - this is false, equivalent to `false and true`
+
+Can do similar with numbers - eg `not 2`
+
+Numbers are `true` as are positive and 0s.
+
+# Input fields
+- Have a min/max, type, etc
+
+`input(defval=1.0, title="float_input", type=input.float)`
