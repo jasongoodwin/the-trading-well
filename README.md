@@ -159,3 +159,5 @@ Numbers are `true` as are positive and 0s.
 `input(defval=1.0, title="float_input", type=input.float)`
 
 There is an options field which is a list so def-val has to be in that list!
+
+There are types of input eg `input(title="resolution", type="input.resolution", defval="60")`
