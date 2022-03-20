@@ -157,3 +157,5 @@ Numbers are `true` as are positive and 0s.
 - Have a min/max, type, etc
 
 `input(defval=1.0, title="float_input", type=input.float)`
+
+There is an options field which is a list so def-val has to be in that list!
